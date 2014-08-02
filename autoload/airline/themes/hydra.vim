@@ -28,51 +28,51 @@ let g:airline#themes#hydra#palette = {}
 " to the dictionary.  The array is in the format:
 " [ guifg, guibg, ctermfg, ctermbg, opts ]. See "help attr-list" for valid
 " values for the "opt" value.
-let s:N1   = [ '#00005f' , '#dfff00' , 17  , 190 ]
-let s:N2   = [ '#ffffff' , '#444444' , 255 , 238 ]
-let s:N3   = [ '#9cffd3' , '#202020' , 85  , 234 ]
+let s:N1   = [ '#00005f' , '#dfff00' , 19  , 7 ]
+let s:N2   = [ '#ffffff' , '#444444' , 20 , 18 ]
+let s:N3   = [ '#9cffd3' , '#202020' , 20  , 16 ]
 let g:airline#themes#hydra#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)
 
 " Here we define overrides for when the buffer is modified.  This will be
 " applied after g:airline#themes#hydra#palette.normal, hence why only certain keys are
 " declared.
 let g:airline#themes#hydra#palette.normal_modified = {
-      \ 'airline_c': [ '#ffffff' , '#5f005f' , 255     , 53      , ''     ] ,
+      \ 'airline_c': [ '#ffffff' , '#5f005f' , 19    , 5      , ''     ] ,
       \ }
 
 
-let s:I1 = [ '#00005f' , '#00dfff' , 17  , 45  ]
-let s:I2 = [ '#ffffff' , '#005fff' , 255 , 27  ]
-let s:I3 = [ '#ffffff' , '#000080' , 15  , 17  ]
+let s:I1 = [ '#00005f' , '#00dfff' , 19  , 4  ]
+let s:I2 = [ '#ffffff' , '#005fff' , 19 , 12  ]
+let s:I3 = [ '#ffffff' , '#000080' , 20  , 16  ]
 let g:airline#themes#hydra#palette.insert = airline#themes#generate_color_map(s:I1, s:I2, s:I3)
 let g:airline#themes#hydra#palette.insert_modified = {
-      \ 'airline_c': [ '#ffffff' , '#5f005f' , 255     , 53      , ''     ] ,
+      \ 'airline_c': [ '#ffffff' , '#5f005f' , 19     , 5      , ''     ] ,
       \ }
 let g:airline#themes#hydra#palette.insert_paste = {
-      \ 'airline_a': [ s:I1[0]   , '#d78700' , s:I1[2] , 172     , ''     ] ,
+      \ 'airline_a': [ s:I1[0]   , '#d78700' , s:I1[2] , 6     , ''     ] ,
       \ }
 
 
 let g:airline#themes#hydra#palette.replace = copy(g:airline#themes#hydra#palette.insert)
-let g:airline#themes#hydra#palette.replace.airline_a = [ s:I2[0]   , '#af0000' , s:I2[2] , 124     , ''     ]
+let g:airline#themes#hydra#palette.replace.airline_a = [ s:I2[0]   , '#af0000' , s:I2[2] , 1     , ''     ]
 let g:airline#themes#hydra#palette.replace_modified = g:airline#themes#hydra#palette.insert_modified
 
 
-let s:V1 = [ '#000000' , '#ffaf00' , 232 , 214 ]
-let s:V2 = [ '#000000' , '#ff5f00' , 232 , 202 ]
-let s:V3 = [ '#ffffff' , '#5f0000' , 15  , 52  ]
+let s:V1 = [ '#000000' , '#ffaf00' , 19 , 3 ]
+let s:V2 = [ '#000000' , '#ff5f00' , 19 , 11 ]
+let s:V3 = [ '#ffffff' , '#5f0000' , 15  , 5  ]
 let g:airline#themes#hydra#palette.visual = airline#themes#generate_color_map(s:V1, s:V2, s:V3)
 let g:airline#themes#hydra#palette.visual_modified = {
       \ 'airline_c': [ '#ffffff' , '#5f005f' , 255     , 53      , ''     ] ,
       \ }
 
 
-let s:IA1 = [ '#4e4e4e' , '#1c1c1c' , 239 , 234 , '' ]
-let s:IA2 = [ '#4e4e4e' , '#262626' , 239 , 235 , '' ]
-let s:IA3 = [ '#4e4e4e' , '#303030' , 239 , 236 , '' ]
+let s:IA1 = [ '#4e4e4e' , '#1c1c1c' , 19 , 16 , '' ]
+let s:IA2 = [ '#4e4e4e' , '#262626' , 19 , 17 , '' ]
+let s:IA3 = [ '#4e4e4e' , '#303030' , 19 , 18 , '' ]
 let g:airline#themes#hydra#palette.inactive = airline#themes#generate_color_map(s:IA1, s:IA2, s:IA3)
 let g:airline#themes#hydra#palette.inactive_modified = {
-      \ 'airline_c': [ '#875faf' , '' , 97 , '' , '' ] ,
+      \ 'airline_c': [ '#875faf' , '' , 5 , '' , '' ] ,
       \ }
 
 
@@ -84,7 +84,7 @@ let g:airline#themes#hydra#palette.inactive_modified = {
 " will be red instead of the section's foreground color. You can also have
 " multiple parts with accents within a section.
 let g:airline#themes#hydra#palette.accents = {
-      \ 'red': [ '#ff0000' , '' , 160 , ''  ]
+      \ 'red': [ '#ff0000' , '' , 1 , ''  ]
       \ }
 
 
@@ -96,7 +96,7 @@ if !get(g:, 'loaded_ctrlp', 0)
   finish
 endif
 let g:airline#themes#hydra#palette.ctrlp = airline#extensions#ctrlp#generate_color_map(
-      \ [ '#d7d7ff' , '#5f00af' , 189 , 55  , ''     ],
-      \ [ '#ffffff' , '#875fd7' , 231 , 98  , ''     ],
-      \ [ '#5f00af' , '#ffffff' , 55  , 231 , 'bold' ])
+      \ [ '#d7d7ff' , '#5f00af' , 19 , 6  , ''     ],
+      \ [ '#ffffff' , '#875fd7' , 19 , 14  , ''     ],
+      \ [ '#5f00af' , '#ffffff' , 19  , 15 , 'bold' ])
 
