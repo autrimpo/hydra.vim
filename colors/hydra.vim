@@ -1,7 +1,8 @@
-" noctu.vim - Vim color scheme for 16-color terminals
+" hydra.vim - Vim color scheme for 256-color terminals
 " --------------------------------------------------------------
-" Author:   Noah Frederick (http://noahfrederick.com/)
-" Version:  1.7.0
+" Author:   Michal Koutenský
+" Version:  1.0
+" Based on noctu.vim by Noah Frederick
 " --------------------------------------------------------------
 
 " Scheme setup {{{
@@ -12,7 +13,7 @@ if exists("syntax_on")
   syntax reset
 endif
 
-let colors_name="noctu"
+let colors_name="hydra"
 
 "}}}
 " Vim UI {{{
