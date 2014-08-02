@@ -18,7 +18,7 @@ let colors_name="hydra"
 "}}}
 " Vim UI {{{
 hi Cursor              ctermfg=7     ctermbg=1
-hi CursorLine          ctermbg=0     cterm=NONE
+hi CursorLine          ctermbg=16     cterm=NONE
 hi MatchParen          ctermfg=7     ctermbg=NONE  cterm=underline
 hi Pmenu               ctermfg=15    ctermbg=0
 hi PmenuThumb          ctermbg=7
@@ -222,6 +222,10 @@ hi SyntasticErrorSign    ctermfg=1   ctermbg=NONE
 hi netrwExe       ctermfg=9
 hi netrwClassify  ctermfg=8  cterm=bold
 
+"}}}
+"IndentGuides {{{
+hi IndentGuidesOdd  ctermbg=16
+hi IndentGuidesEven ctermbg=17
 "}}}
 
 " vim: fdm=marker:sw=2:sts=2:et
