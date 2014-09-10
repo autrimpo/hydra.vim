@@ -227,5 +227,11 @@ hi netrwClassify  ctermfg=8  cterm=bold
 hi IndentGuidesOdd  ctermbg=16
 hi IndentGuidesEven ctermbg=17
 "}}}
+"Easymotion {{{
+hi EasymotionTarget  ctermfg=9
+hi EasymotionShade   ctermfg=8
+hi EasymotionTarget2First  ctermfg=5
+hi EasymotionTarget2Second  ctermfg=1
+"}}}
 
 " vim: fdm=marker:sw=2:sts=2:et
