@@ -70,10 +70,12 @@ hi! link SpecialKey    NonText
 
 "}}}
 " Generic syntax {{{
-hi Delimiter       ctermfg=7
+hi Delimiter       ctermfg=3
 hi Comment         ctermfg=8
 hi Underlined      ctermfg=4   cterm=underline
 hi Type            ctermfg=4
+hi StorageClass    ctermfg=5
+hi Structure       ctermfg=5
 hi String          ctermfg=9
 hi Keyword         ctermfg=2
 hi Todo            ctermfg=15  ctermbg=NONE     cterm=bold,underline
