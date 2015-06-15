@@ -40,7 +40,7 @@ hi StatusLineNC        ctermfg=8     ctermbg=0     cterm=bold
 hi VertSplit           ctermfg=0     ctermbg=0     cterm=NONE
 hi TabLine             ctermfg=8     ctermbg=0     cterm=NONE
 hi TabLineSel          ctermfg=7     ctermbg=0
-hi Folded              ctermfg=3     ctermbg=0
+hi Folded              ctermfg=8     ctermbg=16
 hi Directory           ctermfg=12
 hi Title               ctermfg=3     cterm=bold
 hi ErrorMsg            ctermfg=15    ctermbg=1
@@ -154,7 +154,7 @@ hi! link rubyStringDelimiter        rubyString
 " Git {{{
 hi gitCommitBranch               ctermfg=3
 hi gitCommitSelectedType         ctermfg=10
-hi gitCommitSelectedFile         ctermfg=2
+hi gitCommitSelectedFile         ctermfg=3
 hi gitCommitUnmergedType         ctermfg=9
 hi gitCommitUnmergedFile         ctermfg=1
 hi! link gitCommitFile           Directory
@@ -232,6 +232,11 @@ hi EasymotionTarget  ctermfg=9
 hi EasymotionShade   ctermfg=8
 hi EasymotionTarget2First  ctermfg=5
 hi EasymotionTarget2Second  ctermfg=1
+"}}}
+"Diff {{{
+hi diffAdded ctermfg=2
+hi diffRemoved ctermfg=1
+hi diffLine ctermfg=3
 "}}}
 
 " vim: fdm=marker:sw=2:sts=2:et
