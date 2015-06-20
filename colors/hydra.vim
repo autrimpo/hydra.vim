@@ -19,7 +19,7 @@ let colors_name="hydra"
 " Vim UI {{{
 hi Cursor              ctermfg=7     ctermbg=1
 hi CursorLine          ctermbg=16     cterm=NONE
-hi MatchParen          ctermfg=7     ctermbg=NONE  cterm=underline
+hi MatchParen          ctermfg=5     ctermbg=NONE  cterm=bold
 hi Pmenu               ctermfg=15    ctermbg=0
 hi PmenuThumb          ctermbg=7
 hi PmenuSBar           ctermbg=8
